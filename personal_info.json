@@ -1,10 +1,26 @@
 {
     "John Doe": {
+        "dob": "1997-05-12",
         "age": 28,
-        "email": "s2EwX@example.com"
+        "email": "s2EwX@example.com",
+        "height_cm": 180,
+        "weight_kg": 75,
+        "bmi": 23.15
     },
     "Jane Smith": {
-        "age": 32,
-        "email": "nYDdD@example.com"
+        "dob": "1993-08-22",
+        "age": 31,
+        "email": "nYDdD@example.com",
+        "height_cm": 165,
+        "weight_kg": 60,
+        "bmi": 22.04
+    },
+    "prabaharan": {
+        "dob": "1996-06-15",
+        "age": 29,
+        "email": "prabaharan@example.com",
+        "height_cm": 170,
+        "weight_kg": 65,
+        "bmi": 22.49
     }
 }
