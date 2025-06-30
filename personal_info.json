@@ -5,7 +5,13 @@
         "email": "s2EwX@example.com",
         "height_cm": 180,
         "weight_kg": 75,
-        "bmi": 23.15
+        "bmi": 23.15,
+        "bmi_description": "Normal weight: Keep up the good work!",
+        "bio": "Software engineer from NY.",
+        "blood_group": "A+",
+        "family_details": "Father: Mark Doe, Mother: Jane Doe, Sister: Anna Doe",
+        "aadhar_number": "9876-5432-1098",
+        "address": "456 Park Ave, New York, NY"
     },
     "Jane Smith": {
         "dob": "1993-08-22",
@@ -13,7 +19,13 @@
         "email": "nYDdD@example.com",
         "height_cm": 165,
         "weight_kg": 60,
-        "bmi": 22.04
+        "bmi": 22.04,
+        "bmi_description": "Normal weight: Keep up the good work!",
+        "bio": "Graphic designer.",
+        "blood_group": "B+",
+        "family_details": "Father: Tom Smith, Mother: Lisa Smith",
+        "aadhar_number": "1111-2222-3333",
+        "address": "789 Elm St, Los Angeles, CA"
     },
     "prabaharan": {
         "dob": "1996-06-15",
@@ -21,6 +33,12 @@
         "email": "prabaharan@example.com",
         "height_cm": 170,
         "weight_kg": 65,
-        "bmi": 22.49
+        "bmi": 22.49,
+        "bmi_description": "Normal weight: Keep up the good work!",
+        "bio": "Python developer from India.",
+        "blood_group": "O+",
+        "family_details": "Father: S. Kumar, Mother: L. Devi, Brother: R. Prakash",
+        "aadhar_number": "1234-5678-9012",
+        "address": "123 Main St, Chennai, India"
     }
 }
