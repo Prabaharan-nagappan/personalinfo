@@ -1,0 +1,98 @@
+{
+    "Peter": {
+        "dob": "1996-06-15",
+        "age": 29,
+        "email": "peter@example.com",
+        "height_cm": 180,
+        "weight_kg": 75,
+        "bmi": 23.15,
+        "bmi_description": "Normal weight: Keep up the good work!",
+        "bio": "Data scientist from India.",
+        "blood_group": "B+",
+        "family_details": {
+            "father": "Nagappan",
+            "mother": "Lakshmi",
+            "siblings": [],
+            "spouse": null,
+            "children": []
+        },
+        "aadhar_number": "1234-5678-9012",
+        "address": "123 Main St, New York, NY",
+        "vehicle_details": [
+            {
+                "vehicle_type": "Car",
+                "make": "Toyota",
+                "model": "Camry",
+                "year": 2020,
+                "registration_number": "",
+                "color": "",
+                "insurance_number": "",
+                "insurance_expiry": "",
+                "mileage": null,
+                "engine_number": "",
+                "chassis_number": ""
+            }
+        ],
+        "contact_details": {
+            "phone_numbers": [
+                "+91-9876543210"
+            ],
+            "email_addresses": [
+                "peter@example.com"
+            ],
+            "emergency_contacts": [],
+            "native_place": "Chennai",
+            "languages_known": [
+                "Tamil",
+                "English"
+            ],
+            "communication_address": "123 Main St, Chennai",
+            "permanent_address": "",
+            "alternate_phone": "",
+            "whatsapp_number": "+91-9876543210",
+            "telegram_id": "",
+            "linkedin": "",
+            "facebook": "",
+            "twitter": "",
+            "website": "",
+            "guardian_name": "",
+            "guardian_contact": ""
+        },
+        "education_details": [
+            {
+                "degree": "B.Tech",
+                "institution": "IIT Madras",
+                "year_of_passing": 2017,
+                "grade": "8.9 CGPA",
+                "specialization": "CS",
+                "board": "",
+                "school_name": "",
+                "start_year": 2013,
+                "end_year": 2017,
+                "location": ""
+            }
+        ],
+        "professional_details": [
+            {
+                "designation": "Software Engineer",
+                "company": "Google",
+                "start_date": "2018-07-01",
+                "end_date": "2022-12-31",
+                "location": "Bangalore",
+                "skills": [
+                    "Python",
+                    "ML"
+                ],
+                "responsibilities": [
+                    "Developed ML models"
+                ],
+                "achievements": [
+                    "Employee of the Year 2020"
+                ],
+                "salary": 2500000.0,
+                "employment_type": "Full-time",
+                "currently_working": false
+            }
+        ]
+    }
+}
