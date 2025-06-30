@@ -51,10 +51,10 @@ class PersonalInfoSaver:
         else:
             return "Obese: Consult a healthcare provider."
 
-    def save_info(self, name: str, dob: str, email: str, height_cm: float, weight_kg: float, bio: str = "", blood_group: str = "", family_details: str = "", aadhar_number: str = "", address: str = ""):
+    def save_info(self, name: str, dob: str, email: str, height_cm: float, weight_kg: float, bio: str = "", blood_group: str = "", family_details: dict = None, aadhar_number: str = "", address: str = ""):
         """
         Save comprehensive personal information including name, date of birth, email, height, weight, bio, blood group,
-        family details, aadhar number, and address. Age, BMI, and BMI description are auto-calculated and saved as well.
+        family details (as a dict), aadhar number, and address. Age, BMI, and BMI description are auto-calculated and saved as well.
 
         :param name: Full name of the person
         :param dob: Date of birth in the format YYYY-MM-DD
@@ -70,6 +70,8 @@ class PersonalInfoSaver:
         age = self.calculate_age(dob)
         bmi = self.calculate_bmi(height_cm, weight_kg)
         bmi_desc = self.bmi_description(bmi)
+        if family_details is None:
+            family_details = {}
         self.data[name] = {
             "dob": dob,
             "age": age,
@@ -96,16 +98,50 @@ class PersonalInfoSaver:
         """
         return self.data.get(name, None)
 
-# Example usage:
-# saver = PersonalInfoSaver()
-# saver.save_info(
-#     "John Doe", "1997-05-12", "john@example.com", 175, 70,
-#     bio="Software engineer from NY.",
-#     blood_group="O+",
-#     family_details="Father: Mark Doe, Mother: Jane Doe, Sister: Anna Doe",
-#     aadhar_number="1234-5678-9012",
-#     address="123 Main St, New York, NY"
-# )
-# print(saver.get_info("John Doe"))
+class FamilyDetails:
+    """
+    Used to store and retrieve detailed family member information, where each member can be a string (name) or a PersonalInfoSaver object.
+    """
+    def __init__(self, father=None, mother=None, siblings=None, spouse=None, children=None):
+        self.father = father  # Can be a string or PersonalInfoSaver
+        self.mother = mother  # Can be a string or PersonalInfoSaver
+        self.siblings = siblings if siblings is not None else []  # List of strings or PersonalInfoSaver
+        self.spouse = spouse  # Can be a string or PersonalInfoSaver
+        self.children = children if children is not None else []  # List of strings or PersonalInfoSaver
+
+    def to_dict(self):
+        def member_to_dict(member):
+            if isinstance(member, PersonalInfoSaver):
+                return member.data
+            return member
+        return {
+            "father": member_to_dict(self.father),
+            "mother": member_to_dict(self.mother),
+            "siblings": [member_to_dict(s) for s in self.siblings],
+            "spouse": member_to_dict(self.spouse),
+            "children": [member_to_dict(c) for c in self.children]
+        }
+
+if __name__ == "__main__":
+    # Example usage
+    mother = PersonalInfoSaver()
+    mother.save_info(
+        "Lakshmi", "1972-02-02", "lakshmi@example.com", 160, 60,
+        bio="Homemaker.",
+        blood_group="B+",
+        aadhar_number="2222-3333-4444",
+        address="456 Park Ave, New York, NY"
+    )
+    family = FamilyDetails(father="Nagappan", mother=mother)
+    personal = PersonalInfoSaver()
+    personal.save_info(
+        "prabaharan", "1996-06-15", "prabaharan@example.com", 180, 75,
+        bio="Data scientist from India.",
+        blood_group="B+",
+        family_details=family.to_dict(),
+        aadhar_number="1234-5678-9012",
+        address="123 Main St, New York, NY"
+    )
+    print(personal.get_info("prabaharan"))
 
 

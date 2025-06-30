@@ -9,7 +9,13 @@
         "bmi_description": "Normal weight: Keep up the good work!",
         "bio": "Software engineer from NY.",
         "blood_group": "A+",
-        "family_details": "Father: Mark Doe, Mother: Jane Doe, Sister: Anna Doe",
+        "family_details": {
+            "father": "Mark Doe",
+            "mother": "Jane Doe",
+            "siblings": "Anna Doe",
+            "spouse": "",
+            "children": ""
+        },
         "aadhar_number": "9876-5432-1098",
         "address": "456 Park Ave, New York, NY"
     },
@@ -23,7 +29,13 @@
         "bmi_description": "Normal weight: Keep up the good work!",
         "bio": "Graphic designer.",
         "blood_group": "B+",
-        "family_details": "Father: Tom Smith, Mother: Lisa Smith",
+        "family_details": {
+            "father": "Tom Smith",
+            "mother": "Lisa Smith",
+            "siblings": "",
+            "spouse": "",
+            "children": ""
+        },
         "aadhar_number": "1111-2222-3333",
         "address": "789 Elm St, Los Angeles, CA"
     },
@@ -31,14 +43,131 @@
         "dob": "1996-06-15",
         "age": 29,
         "email": "prabaharan@example.com",
-        "height_cm": 170,
-        "weight_kg": 65,
-        "bmi": 22.49,
+        "height_cm": 180,
+        "weight_kg": 75,
+        "bmi": 23.15,
         "bmi_description": "Normal weight: Keep up the good work!",
-        "bio": "Python developer from India.",
-        "blood_group": "O+",
-        "family_details": "Father: S. Kumar, Mother: L. Devi, Brother: R. Prakash",
+        "bio": "Data scientist from India.",
+        "blood_group": "B+",
+        "family_details": {
+            "father": "Nagappan",
+            "mother": {
+                "John Doe": {
+                    "dob": "1997-05-12",
+                    "age": 28,
+                    "email": "s2EwX@example.com",
+                    "height_cm": 180,
+                    "weight_kg": 75,
+                    "bmi": 23.15,
+                    "bmi_description": "Normal weight: Keep up the good work!",
+                    "bio": "Software engineer from NY.",
+                    "blood_group": "A+",
+                    "family_details": {
+                        "father": "Mark Doe",
+                        "mother": "Jane Doe",
+                        "siblings": "Anna Doe",
+                        "spouse": "",
+                        "children": ""
+                    },
+                    "aadhar_number": "9876-5432-1098",
+                    "address": "456 Park Ave, New York, NY"
+                },
+                "Jane Smith": {
+                    "dob": "1993-08-22",
+                    "age": 31,
+                    "email": "nYDdD@example.com",
+                    "height_cm": 165,
+                    "weight_kg": 60,
+                    "bmi": 22.04,
+                    "bmi_description": "Normal weight: Keep up the good work!",
+                    "bio": "Graphic designer.",
+                    "blood_group": "B+",
+                    "family_details": {
+                        "father": "Tom Smith",
+                        "mother": "Lisa Smith",
+                        "siblings": "",
+                        "spouse": "",
+                        "children": ""
+                    },
+                    "aadhar_number": "1111-2222-3333",
+                    "address": "789 Elm St, Los Angeles, CA"
+                },
+                "prabaharan": {
+                    "dob": "1996-06-15",
+                    "age": 29,
+                    "email": "prabaharan@example.com",
+                    "height_cm": 180,
+                    "weight_kg": 75,
+                    "bmi": 23.15,
+                    "bmi_description": "Normal weight: Keep up the good work!",
+                    "bio": "Data scientist from India.",
+                    "blood_group": "B+",
+                    "family_details": {},
+                    "aadhar_number": "1234-5678-9012",
+                    "address": "123 Main St, New York, NY"
+                },
+                "Mark Doe": {
+                    "dob": "1970-01-01",
+                    "age": 55,
+                    "email": "markdoe@example.com",
+                    "height_cm": 175,
+                    "weight_kg": 80,
+                    "bmi": 26.12,
+                    "bmi_description": "Overweight: Consider regular exercise.",
+                    "bio": "Retired engineer.",
+                    "blood_group": "A+",
+                    "family_details": {},
+                    "aadhar_number": "1111-2222-3333",
+                    "address": "456 Park Ave, New York, NY"
+                },
+                "Lakshmi": {
+                    "dob": "1972-02-02",
+                    "age": 53,
+                    "email": "lakshmi@example.com",
+                    "height_cm": 160,
+                    "weight_kg": 60,
+                    "bmi": 23.44,
+                    "bmi_description": "Normal weight: Keep up the good work!",
+                    "bio": "Homemaker.",
+                    "blood_group": "B+",
+                    "family_details": {},
+                    "aadhar_number": "2222-3333-4444",
+                    "address": "456 Park Ave, New York, NY"
+                }
+            },
+            "siblings": [],
+            "spouse": null,
+            "children": []
+        },
         "aadhar_number": "1234-5678-9012",
-        "address": "123 Main St, Chennai, India"
+        "address": "123 Main St, New York, NY"
+    },
+    "Mark Doe": {
+        "dob": "1970-01-01",
+        "age": 55,
+        "email": "markdoe@example.com",
+        "height_cm": 175,
+        "weight_kg": 80,
+        "bmi": 26.12,
+        "bmi_description": "Overweight: Consider regular exercise.",
+        "bio": "Retired engineer.",
+        "blood_group": "A+",
+        "family_details": {},
+        "aadhar_number": "1111-2222-3333",
+        "address": "456 Park Ave, New York, NY"
+    },
+    "Lakshmi": {
+        "dob": "1972-02-02",
+        "age": 53,
+        "email": "lakshmi@example.com",
+        "height_cm": 160,
+        "weight_kg": 60,
+        "bmi": 23.44,
+        "bmi_description": "Normal weight: Keep up the good work!",
+        "bio": "Homemaker.",
+        "blood_group": "B+",
+        "family_details": {},
+        "aadhar_number": "2222-3333-4444",
+        "address": "456 Park Ave, New York, NY"
     }
 }
