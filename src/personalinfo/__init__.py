@@ -51,7 +51,7 @@ class PersonalInfoSaver:
         else:
             return "Obese: Consult a healthcare provider."
 
-    def save_info(self, name: str, dob: str, email: str, height_cm: float, weight_kg: float, bio: str = "", blood_group: str = "", family_details: dict = None, aadhar_number: str = "", address: str = ""):
+    def save_info(self, name: str, dob: str, email: str, height_cm: float, weight_kg: float, bio: str = "", blood_group: str = "", family_details: dict = None, aadhar_number: str = "", address: str = "", vehicle_details: list = None):
         """
         Save comprehensive personal information including name, date of birth, email, height, weight, bio, blood group,
         family details (as a dict), aadhar number, and address. Age, BMI, and BMI description are auto-calculated and saved as well.
@@ -66,12 +66,15 @@ class PersonalInfoSaver:
         :param family_details: Family details or description (optional)
         :param aadhar_number: Aadhar number (optional)
         :param address: Address (optional)
+        :param vehicle_details: List of vehicle details (optional)
         """
         age = self.calculate_age(dob)
         bmi = self.calculate_bmi(height_cm, weight_kg)
         bmi_desc = self.bmi_description(bmi)
         if family_details is None:
             family_details = {}
+        if vehicle_details is None:
+            vehicle_details = []
         self.data[name] = {
             "dob": dob,
             "age": age,
@@ -84,7 +87,8 @@ class PersonalInfoSaver:
             "blood_group": blood_group,
             "family_details": family_details,
             "aadhar_number": aadhar_number,
-            "address": address
+            "address": address,
+            "vehicle_details": [v.to_dict() if isinstance(v, VehicleDetails) else v for v in vehicle_details]
         }
         with open(self.filename, "w") as f:
             json.dump(self.data, f, indent=4)
@@ -122,26 +126,86 @@ class FamilyDetails:
             "children": [member_to_dict(c) for c in self.children]
         }
 
+class VehicleDetails:
+    """
+    Used to store and retrieve vehicle details for a person or family member, including type, insurance, and more.
+    """
+    def __init__(self, vehicle_type: str = "", make: str = "", model: str = "", year: int = None, registration_number: str = "", color: str = "", insurance_number: str = "", insurance_expiry: str = "", mileage: float = None, engine_number: str = "", chassis_number: str = ""):
+        self.vehicle_type = vehicle_type  # e.g., 'Car', 'Bike'
+        self.make = make
+        self.model = model
+        self.year = year
+        self.registration_number = registration_number
+        self.color = color
+        self.insurance_number = insurance_number
+        self.insurance_expiry = insurance_expiry  # format: YYYY-MM-DD
+        self.mileage = mileage
+        self.engine_number = engine_number
+        self.chassis_number = chassis_number
+
+    def to_dict(self):
+        return {
+            "vehicle_type": self.vehicle_type,
+            "make": self.make,
+            "model": self.model,
+            "year": self.year,
+            "registration_number": self.registration_number,
+            "color": self.color,
+            "insurance_number": self.insurance_number,
+            "insurance_expiry": self.insurance_expiry,
+            "mileage": self.mileage,
+            "engine_number": self.engine_number,
+            "chassis_number": self.chassis_number
+        }
+
 if __name__ == "__main__":
     # Example usage
+    car = VehicleDetails(
+        vehicle_type="Car",
+        make="Toyota",
+        model="Camry",
+        year=2020,
+        registration_number="TN01AB1234",
+        color="White",
+        insurance_number="INS123456789",
+        insurance_expiry="2026-05-31",
+        mileage=15000.5,
+        engine_number="ENG987654321",
+        chassis_number="CHS123456789"
+    )
+    bike = VehicleDetails(
+        vehicle_type="Bike",
+        make="Honda",
+        model="CBR",
+        year=2018,
+        registration_number="TN01XY5678",
+        color="Red",
+        insurance_number="INS987654321",
+        insurance_expiry="2025-12-31",
+        mileage=22000.0,
+        engine_number="ENG123456789",
+        chassis_number="CHS987654321"
+    )
     mother = PersonalInfoSaver()
     mother.save_info(
         "Lakshmi", "1972-02-02", "lakshmi@example.com", 160, 60,
         bio="Homemaker.",
         blood_group="B+",
         aadhar_number="2222-3333-4444",
-        address="456 Park Ave, New York, NY"
+        address="456 Park Ave, New York, NY",
+        vehicle_details=[car]
     )
     family = FamilyDetails(father="Nagappan", mother=mother)
     personal = PersonalInfoSaver()
     personal.save_info(
-        "prabaharan", "1996-06-15", "prabaharan@example.com", 180, 75,
+        "Peter", "1996-06-15", "Peter@example.com", 180, 75,
         bio="Data scientist from India.",
         blood_group="B+",
         family_details=family.to_dict(),
         aadhar_number="1234-5678-9012",
-        address="123 Main St, New York, NY"
+        address="123 Main St, New York, NY",
+        vehicle_details=[car, bike]
     )
-    print(personal.get_info("prabaharan"))
+    print(personal.get_info("Peter"))
 
 

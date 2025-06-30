@@ -1,43 +1,32 @@
 {
-    "John Doe": {
-        "dob": "1997-05-12",
-        "age": 28,
-        "email": "s2EwX@example.com",
-        "height_cm": 180,
-        "weight_kg": 75,
-        "bmi": 23.15,
-        "bmi_description": "Normal weight: Keep up the good work!",
-        "bio": "Software engineer from NY.",
-        "blood_group": "A+",
-        "family_details": {
-            "father": "Mark Doe",
-            "mother": "Jane Doe",
-            "siblings": "Anna Doe",
-            "spouse": "",
-            "children": ""
-        },
-        "aadhar_number": "9876-5432-1098",
-        "address": "456 Park Ave, New York, NY"
-    },
-    "Jane Smith": {
-        "dob": "1993-08-22",
-        "age": 31,
-        "email": "nYDdD@example.com",
-        "height_cm": 165,
+    "Lakshmi": {
+        "dob": "1972-02-02",
+        "age": 53,
+        "email": "lakshmi@example.com",
+        "height_cm": 160,
         "weight_kg": 60,
-        "bmi": 22.04,
+        "bmi": 23.44,
         "bmi_description": "Normal weight: Keep up the good work!",
-        "bio": "Graphic designer.",
+        "bio": "Homemaker.",
         "blood_group": "B+",
-        "family_details": {
-            "father": "Tom Smith",
-            "mother": "Lisa Smith",
-            "siblings": "",
-            "spouse": "",
-            "children": ""
-        },
-        "aadhar_number": "1111-2222-3333",
-        "address": "789 Elm St, Los Angeles, CA"
+        "family_details": {},
+        "aadhar_number": "2222-3333-4444",
+        "address": "456 Park Ave, New York, NY",
+        "vehicle_details": [
+            {
+                "vehicle_type": "Car",
+                "make": "Toyota",
+                "model": "Camry",
+                "year": 2020,
+                "registration_number": "TN01AB1234",
+                "color": "White",
+                "insurance_number": "INS123456789",
+                "insurance_expiry": "2026-05-31",
+                "mileage": 15000.5,
+                "engine_number": "ENG987654321",
+                "chassis_number": "CHS123456789"
+            }
+        ]
     },
     "prabaharan": {
         "dob": "1996-06-15",
@@ -52,74 +41,6 @@
         "family_details": {
             "father": "Nagappan",
             "mother": {
-                "John Doe": {
-                    "dob": "1997-05-12",
-                    "age": 28,
-                    "email": "s2EwX@example.com",
-                    "height_cm": 180,
-                    "weight_kg": 75,
-                    "bmi": 23.15,
-                    "bmi_description": "Normal weight: Keep up the good work!",
-                    "bio": "Software engineer from NY.",
-                    "blood_group": "A+",
-                    "family_details": {
-                        "father": "Mark Doe",
-                        "mother": "Jane Doe",
-                        "siblings": "Anna Doe",
-                        "spouse": "",
-                        "children": ""
-                    },
-                    "aadhar_number": "9876-5432-1098",
-                    "address": "456 Park Ave, New York, NY"
-                },
-                "Jane Smith": {
-                    "dob": "1993-08-22",
-                    "age": 31,
-                    "email": "nYDdD@example.com",
-                    "height_cm": 165,
-                    "weight_kg": 60,
-                    "bmi": 22.04,
-                    "bmi_description": "Normal weight: Keep up the good work!",
-                    "bio": "Graphic designer.",
-                    "blood_group": "B+",
-                    "family_details": {
-                        "father": "Tom Smith",
-                        "mother": "Lisa Smith",
-                        "siblings": "",
-                        "spouse": "",
-                        "children": ""
-                    },
-                    "aadhar_number": "1111-2222-3333",
-                    "address": "789 Elm St, Los Angeles, CA"
-                },
-                "prabaharan": {
-                    "dob": "1996-06-15",
-                    "age": 29,
-                    "email": "prabaharan@example.com",
-                    "height_cm": 180,
-                    "weight_kg": 75,
-                    "bmi": 23.15,
-                    "bmi_description": "Normal weight: Keep up the good work!",
-                    "bio": "Data scientist from India.",
-                    "blood_group": "B+",
-                    "family_details": {},
-                    "aadhar_number": "1234-5678-9012",
-                    "address": "123 Main St, New York, NY"
-                },
-                "Mark Doe": {
-                    "dob": "1970-01-01",
-                    "age": 55,
-                    "email": "markdoe@example.com",
-                    "height_cm": 175,
-                    "weight_kg": 80,
-                    "bmi": 26.12,
-                    "bmi_description": "Overweight: Consider regular exercise.",
-                    "bio": "Retired engineer.",
-                    "blood_group": "A+",
-                    "family_details": {},
-                    "aadhar_number": "1111-2222-3333",
-                    "address": "456 Park Ave, New York, NY"
-                },
                 "Lakshmi": {
                     "dob": "1972-02-02",
                     "age": 53,
@@ -132,7 +53,117 @@
                     "blood_group": "B+",
                     "family_details": {},
                     "aadhar_number": "2222-3333-4444",
-                    "address": "456 Park Ave, New York, NY"
+                    "address": "456 Park Ave, New York, NY",
+                    "vehicle_details": [
+                        {
+                            "vehicle_type": "Car",
+                            "make": "Toyota",
+                            "model": "Camry",
+                            "year": 2020,
+                            "registration_number": "TN01AB1234",
+                            "color": "White",
+                            "insurance_number": "INS123456789",
+                            "insurance_expiry": "2026-05-31",
+                            "mileage": 15000.5,
+                            "engine_number": "ENG987654321",
+                            "chassis_number": "CHS123456789"
+                        }
+                    ]
+                },
+                "prabaharan": {
+                    "dob": "1996-06-15",
+                    "age": 29,
+                    "email": "prabaharan@example.com",
+                    "height_cm": 180,
+                    "weight_kg": 75,
+                    "bmi": 23.15,
+                    "bmi_description": "Normal weight: Keep up the good work!",
+                    "bio": "Data scientist from India.",
+                    "blood_group": "B+",
+                    "family_details": {
+                        "father": "Nagappan",
+                        "mother": {
+                            "Lakshmi": {
+                                "dob": "1972-02-02",
+                                "age": 53,
+                                "email": "lakshmi@example.com",
+                                "height_cm": 160,
+                                "weight_kg": 60,
+                                "bmi": 23.44,
+                                "bmi_description": "Normal weight: Keep up the good work!",
+                                "bio": "Homemaker.",
+                                "blood_group": "B+",
+                                "family_details": {},
+                                "aadhar_number": "2222-3333-4444",
+                                "address": "456 Park Ave, New York, NY",
+                                "vehicle_details": [
+                                    {
+                                        "make": "Toyota",
+                                        "model": "Camry",
+                                        "year": 2020,
+                                        "registration_number": "TN01AB1234",
+                                        "color": "White"
+                                    }
+                                ]
+                            },
+                            "prabaharan": {
+                                "dob": "1996-06-15",
+                                "age": 29,
+                                "email": "prabaharan@example.com",
+                                "height_cm": 180,
+                                "weight_kg": 75,
+                                "bmi": 23.15,
+                                "bmi_description": "Normal weight: Keep up the good work!",
+                                "bio": "Data scientist from India.",
+                                "blood_group": "B+",
+                                "family_details": {
+                                    "father": "Nagappan",
+                                    "mother": {
+                                        "Lakshmi": {
+                                            "dob": "1972-02-02",
+                                            "age": 53,
+                                            "email": "lakshmi@example.com",
+                                            "height_cm": 160,
+                                            "weight_kg": 60,
+                                            "bmi": 23.44,
+                                            "bmi_description": "Normal weight: Keep up the good work!",
+                                            "bio": "Homemaker.",
+                                            "blood_group": "B+",
+                                            "family_details": {},
+                                            "aadhar_number": "2222-3333-4444",
+                                            "address": "456 Park Ave, New York, NY"
+                                        }
+                                    },
+                                    "siblings": [],
+                                    "spouse": null,
+                                    "children": []
+                                },
+                                "aadhar_number": "1234-5678-9012",
+                                "address": "123 Main St, New York, NY"
+                            }
+                        },
+                        "siblings": [],
+                        "spouse": null,
+                        "children": []
+                    },
+                    "aadhar_number": "1234-5678-9012",
+                    "address": "123 Main St, New York, NY",
+                    "vehicle_details": [
+                        {
+                            "make": "Toyota",
+                            "model": "Camry",
+                            "year": 2020,
+                            "registration_number": "TN01AB1234",
+                            "color": "White"
+                        },
+                        {
+                            "make": "Honda",
+                            "model": "CBR",
+                            "year": 2018,
+                            "registration_number": "TN01XY5678",
+                            "color": "Red"
+                        }
+                    ]
                 }
             },
             "siblings": [],
@@ -140,34 +171,285 @@
             "children": []
         },
         "aadhar_number": "1234-5678-9012",
-        "address": "123 Main St, New York, NY"
+        "address": "123 Main St, New York, NY",
+        "vehicle_details": [
+            {
+                "vehicle_type": "Car",
+                "make": "Toyota",
+                "model": "Camry",
+                "year": 2020,
+                "registration_number": "TN01AB1234",
+                "color": "White",
+                "insurance_number": "INS123456789",
+                "insurance_expiry": "2026-05-31",
+                "mileage": 15000.5,
+                "engine_number": "ENG987654321",
+                "chassis_number": "CHS123456789"
+            },
+            {
+                "vehicle_type": "Bike",
+                "make": "Honda",
+                "model": "CBR",
+                "year": 2018,
+                "registration_number": "TN01XY5678",
+                "color": "Red",
+                "insurance_number": "INS987654321",
+                "insurance_expiry": "2025-12-31",
+                "mileage": 22000.0,
+                "engine_number": "ENG123456789",
+                "chassis_number": "CHS987654321"
+            }
+        ]
     },
-    "Mark Doe": {
-        "dob": "1970-01-01",
-        "age": 55,
-        "email": "markdoe@example.com",
-        "height_cm": 175,
-        "weight_kg": 80,
-        "bmi": 26.12,
-        "bmi_description": "Overweight: Consider regular exercise.",
-        "bio": "Retired engineer.",
-        "blood_group": "A+",
-        "family_details": {},
-        "aadhar_number": "1111-2222-3333",
-        "address": "456 Park Ave, New York, NY"
-    },
-    "Lakshmi": {
-        "dob": "1972-02-02",
-        "age": 53,
-        "email": "lakshmi@example.com",
-        "height_cm": 160,
-        "weight_kg": 60,
-        "bmi": 23.44,
+    "Peter": {
+        "dob": "1996-06-15",
+        "age": 29,
+        "email": "Peter@example.com",
+        "height_cm": 180,
+        "weight_kg": 75,
+        "bmi": 23.15,
         "bmi_description": "Normal weight: Keep up the good work!",
-        "bio": "Homemaker.",
+        "bio": "Data scientist from India.",
         "blood_group": "B+",
-        "family_details": {},
-        "aadhar_number": "2222-3333-4444",
-        "address": "456 Park Ave, New York, NY"
+        "family_details": {
+            "father": "Nagappan",
+            "mother": {
+                "Lakshmi": {
+                    "dob": "1972-02-02",
+                    "age": 53,
+                    "email": "lakshmi@example.com",
+                    "height_cm": 160,
+                    "weight_kg": 60,
+                    "bmi": 23.44,
+                    "bmi_description": "Normal weight: Keep up the good work!",
+                    "bio": "Homemaker.",
+                    "blood_group": "B+",
+                    "family_details": {},
+                    "aadhar_number": "2222-3333-4444",
+                    "address": "456 Park Ave, New York, NY",
+                    "vehicle_details": [
+                        {
+                            "vehicle_type": "Car",
+                            "make": "Toyota",
+                            "model": "Camry",
+                            "year": 2020,
+                            "registration_number": "TN01AB1234",
+                            "color": "White",
+                            "insurance_number": "INS123456789",
+                            "insurance_expiry": "2026-05-31",
+                            "mileage": 15000.5,
+                            "engine_number": "ENG987654321",
+                            "chassis_number": "CHS123456789"
+                        }
+                    ]
+                },
+                "prabaharan": {
+                    "dob": "1996-06-15",
+                    "age": 29,
+                    "email": "prabaharan@example.com",
+                    "height_cm": 180,
+                    "weight_kg": 75,
+                    "bmi": 23.15,
+                    "bmi_description": "Normal weight: Keep up the good work!",
+                    "bio": "Data scientist from India.",
+                    "blood_group": "B+",
+                    "family_details": {
+                        "father": "Nagappan",
+                        "mother": {
+                            "Lakshmi": {
+                                "dob": "1972-02-02",
+                                "age": 53,
+                                "email": "lakshmi@example.com",
+                                "height_cm": 160,
+                                "weight_kg": 60,
+                                "bmi": 23.44,
+                                "bmi_description": "Normal weight: Keep up the good work!",
+                                "bio": "Homemaker.",
+                                "blood_group": "B+",
+                                "family_details": {},
+                                "aadhar_number": "2222-3333-4444",
+                                "address": "456 Park Ave, New York, NY",
+                                "vehicle_details": [
+                                    {
+                                        "vehicle_type": "Car",
+                                        "make": "Toyota",
+                                        "model": "Camry",
+                                        "year": 2020,
+                                        "registration_number": "TN01AB1234",
+                                        "color": "White",
+                                        "insurance_number": "INS123456789",
+                                        "insurance_expiry": "2026-05-31",
+                                        "mileage": 15000.5,
+                                        "engine_number": "ENG987654321",
+                                        "chassis_number": "CHS123456789"
+                                    }
+                                ]
+                            },
+                            "prabaharan": {
+                                "dob": "1996-06-15",
+                                "age": 29,
+                                "email": "prabaharan@example.com",
+                                "height_cm": 180,
+                                "weight_kg": 75,
+                                "bmi": 23.15,
+                                "bmi_description": "Normal weight: Keep up the good work!",
+                                "bio": "Data scientist from India.",
+                                "blood_group": "B+",
+                                "family_details": {
+                                    "father": "Nagappan",
+                                    "mother": {
+                                        "Lakshmi": {
+                                            "dob": "1972-02-02",
+                                            "age": 53,
+                                            "email": "lakshmi@example.com",
+                                            "height_cm": 160,
+                                            "weight_kg": 60,
+                                            "bmi": 23.44,
+                                            "bmi_description": "Normal weight: Keep up the good work!",
+                                            "bio": "Homemaker.",
+                                            "blood_group": "B+",
+                                            "family_details": {},
+                                            "aadhar_number": "2222-3333-4444",
+                                            "address": "456 Park Ave, New York, NY",
+                                            "vehicle_details": [
+                                                {
+                                                    "make": "Toyota",
+                                                    "model": "Camry",
+                                                    "year": 2020,
+                                                    "registration_number": "TN01AB1234",
+                                                    "color": "White"
+                                                }
+                                            ]
+                                        },
+                                        "prabaharan": {
+                                            "dob": "1996-06-15",
+                                            "age": 29,
+                                            "email": "prabaharan@example.com",
+                                            "height_cm": 180,
+                                            "weight_kg": 75,
+                                            "bmi": 23.15,
+                                            "bmi_description": "Normal weight: Keep up the good work!",
+                                            "bio": "Data scientist from India.",
+                                            "blood_group": "B+",
+                                            "family_details": {
+                                                "father": "Nagappan",
+                                                "mother": {
+                                                    "Lakshmi": {
+                                                        "dob": "1972-02-02",
+                                                        "age": 53,
+                                                        "email": "lakshmi@example.com",
+                                                        "height_cm": 160,
+                                                        "weight_kg": 60,
+                                                        "bmi": 23.44,
+                                                        "bmi_description": "Normal weight: Keep up the good work!",
+                                                        "bio": "Homemaker.",
+                                                        "blood_group": "B+",
+                                                        "family_details": {},
+                                                        "aadhar_number": "2222-3333-4444",
+                                                        "address": "456 Park Ave, New York, NY"
+                                                    }
+                                                },
+                                                "siblings": [],
+                                                "spouse": null,
+                                                "children": []
+                                            },
+                                            "aadhar_number": "1234-5678-9012",
+                                            "address": "123 Main St, New York, NY"
+                                        }
+                                    },
+                                    "siblings": [],
+                                    "spouse": null,
+                                    "children": []
+                                },
+                                "aadhar_number": "1234-5678-9012",
+                                "address": "123 Main St, New York, NY",
+                                "vehicle_details": [
+                                    {
+                                        "make": "Toyota",
+                                        "model": "Camry",
+                                        "year": 2020,
+                                        "registration_number": "TN01AB1234",
+                                        "color": "White"
+                                    },
+                                    {
+                                        "make": "Honda",
+                                        "model": "CBR",
+                                        "year": 2018,
+                                        "registration_number": "TN01XY5678",
+                                        "color": "Red"
+                                    }
+                                ]
+                            }
+                        },
+                        "siblings": [],
+                        "spouse": null,
+                        "children": []
+                    },
+                    "aadhar_number": "1234-5678-9012",
+                    "address": "123 Main St, New York, NY",
+                    "vehicle_details": [
+                        {
+                            "vehicle_type": "Car",
+                            "make": "Toyota",
+                            "model": "Camry",
+                            "year": 2020,
+                            "registration_number": "TN01AB1234",
+                            "color": "White",
+                            "insurance_number": "INS123456789",
+                            "insurance_expiry": "2026-05-31",
+                            "mileage": 15000.5,
+                            "engine_number": "ENG987654321",
+                            "chassis_number": "CHS123456789"
+                        },
+                        {
+                            "vehicle_type": "Bike",
+                            "make": "Honda",
+                            "model": "CBR",
+                            "year": 2018,
+                            "registration_number": "TN01XY5678",
+                            "color": "Red",
+                            "insurance_number": "INS987654321",
+                            "insurance_expiry": "2025-12-31",
+                            "mileage": 22000.0,
+                            "engine_number": "ENG123456789",
+                            "chassis_number": "CHS987654321"
+                        }
+                    ]
+                }
+            },
+            "siblings": [],
+            "spouse": null,
+            "children": []
+        },
+        "aadhar_number": "1234-5678-9012",
+        "address": "123 Main St, New York, NY",
+        "vehicle_details": [
+            {
+                "vehicle_type": "Car",
+                "make": "Toyota",
+                "model": "Camry",
+                "year": 2020,
+                "registration_number": "TN01AB1234",
+                "color": "White",
+                "insurance_number": "INS123456789",
+                "insurance_expiry": "2026-05-31",
+                "mileage": 15000.5,
+                "engine_number": "ENG987654321",
+                "chassis_number": "CHS123456789"
+            },
+            {
+                "vehicle_type": "Bike",
+                "make": "Honda",
+                "model": "CBR",
+                "year": 2018,
+                "registration_number": "TN01XY5678",
+                "color": "Red",
+                "insurance_number": "INS987654321",
+                "insurance_expiry": "2025-12-31",
+                "mileage": 22000.0,
+                "engine_number": "ENG123456789",
+                "chassis_number": "CHS987654321"
+            }
+        ]
     }
 }
